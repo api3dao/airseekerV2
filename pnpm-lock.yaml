@@ -15,8 +15,8 @@ importers:
         specifier: ^0.13.4
         version: 0.13.4
       '@api3/contracts':
-        specifier: 11.2.0
-        version: 11.2.0
+        specifier: 17.0.0
+        version: 17.0.0(typescript@5.7.3)
       '@api3/eslint-plugin-commons':
         specifier: ^3.0.0
         version: 3.0.0(@babel/core@7.26.0)(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.19)(ts-node@10.9.2(@types/node@20.17.19)(typescript@5.7.3)))(prettier@3.5.1)(typescript@5.7.3)
@@ -137,9 +137,10 @@ packages:
     resolution: {integrity: sha512-DEAopivj60gdVO4pm1y0gcbnUh5H4A69Wh1pWFVmYf8hJIaC03ovXC01E2Lp+G1Ot9jHndrPM6kwr4XCzwQjVw==}
     engines: {node: '>=18.14.0'}
 
-  '@api3/contracts@11.2.0':
-    resolution: {integrity: sha512-bw5GirzGtFQerFKg79MdKvzG3PjLjKoL3huxJbFra1dXpQRjigTLlh4zSIHGvsV3X8HQx49T7ocMQ56gT5PeUA==}
+  '@api3/contracts@17.0.0':
+    resolution: {integrity: sha512-rbG1igUfBLQb7NYpNRkg50TXQ5YQI/sSre4rsoL/m5TF+djtNDwA/U4LluTJNem5N5iieniOytwAuBLM6cvDBA==}
     engines: {node: '>=20.17.9'}
+    hasBin: true
 
   '@api3/eslint-plugin-commons@3.0.0':
     resolution: {integrity: sha512-XUEM2HDA9LCHt6Fd7xydlxUjM2Foquilcb07IDzxMgAYq08yWXP3tuIjduZyHYTX0L7zFoOYfD1z8NQniRN61g==}
@@ -4567,11 +4568,14 @@ snapshots:
       - debug
       - utf-8-validate
 
-  '@api3/contracts@11.2.0':
+  '@api3/contracts@17.0.0(typescript@5.7.3)':
     dependencies:
+      '@api3/chains': 11.8.0(typescript@5.7.3)
       ethers: 6.13.5
+      yargs: 17.7.2
     transitivePeerDependencies:
       - bufferutil
+      - typescript
       - utf-8-validate
 
   '@api3/eslint-plugin-commons@3.0.0(@babel/core@7.26.0)(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.19)(ts-node@10.9.2(@types/node@20.17.19)(typescript@5.7.3)))(prettier@3.5.1)(typescript@5.7.3)':
