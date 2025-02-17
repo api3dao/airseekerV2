@@ -11,7 +11,7 @@
     "src"
   ],
   "main": "./dist/src/npm-exports.js",
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.15.5",
   "sideEffects": false,
   "repository": {
     "type": "git",
